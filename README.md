@@ -2,6 +2,10 @@
 
 Script Optimisé | Configuration Facile | Shop . Armurerie . Pole Emploi 
 
+# Important
+
+  - Narek_1 Dispose de sont propre systeme license donc si vous ne souhaitez pas utiliser supprimer le sv_license et remplacer dans le client le trigger de la verification license et remplacer par le votre.
+
 # Instalation 
 
   - Mettre Narek_1 & Narek_2 dans votre dossier ressource
