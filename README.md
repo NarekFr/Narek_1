@@ -6,7 +6,7 @@ Voici mon serveur discord si vous trouvez des bugs ou autre : https://discord.gg
 
 # Important
 
-  - Narek_1 Dispose de sont propre systeme license donc si vous ne souhaitez pas utiliser supprimer le sv_license et remplacer dans le client le trigger de la verification license et remplacer par le votre.
+  - Narek_1 Dispose de sont propre systeme license donc si vous ne souhaitez pas utiliser supprimer le sv_license et remplacer dans le client le trigger de la vérification license et remplacer par le votre.
 
 # Instalation 
 
