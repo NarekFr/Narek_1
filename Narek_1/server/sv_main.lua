@@ -39,7 +39,7 @@ AddEventHandler('Narek_1:Shop', function(id, label, item, price)
     else
         if id == 1 then
             TriggerClientEvent('esx:showAdvancedNotification', source, _U('shop'), '', _U('PasArgent'), 'CHAR_DOM', 1)
-        elseif id == 1 then
+        elseif id == 2 then
             TriggerClientEvent('esx:showAdvancedNotification', source, _U('armurerie'), '', _U('PasArgent'), 'CHAR_DOM', 1)
         end
     end
