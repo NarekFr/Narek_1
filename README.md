@@ -6,7 +6,7 @@ Voici mon serveur discord si vous trouvez des bugs ou autre : https://discord.gg
 
 # Important
 
-  - Narek_1 Dispose de sont propre systeme license donc si vous ne souhaitez pas utiliser supprimer le sv_license et remplacer dans le client le trigger de la vérification license et remplacer par le votre.
+  - Narek_1 Dispose de son propre systeme license donc si vous ne souhaitez pas utiliser supprimer le sv_license et remplacer dans le client le trigger de la vérification license et remplacer par le votre.
 
 # Instalation 
 
@@ -18,7 +18,7 @@ Voici mon serveur discord si vous trouvez des bugs ou autre : https://discord.gg
   - Tout ce passe dans le config.lua
   
   - Si vous utilisez es_extended version limit | Config.Weight = false
-  - Config.Shop | Vous permet d'ajouter de retier les Points , Ped , Blips des Shops , Armurerie et Pole Emploi
+  - Config.Shop | Vous permet d'ajouter de retirer les Points , Ped , Blips des Shops , Armurerie et Pole Emploi
   - Config.Blip | Vous permet de mettre en place des Blips raduis
   - Config.Food | Vous permet de choisir les items dans les shops
   - Config.Weapon | Vous permet de choisir les armes dans les shops
@@ -26,4 +26,4 @@ Voici mon serveur discord si vous trouvez des bugs ou autre : https://discord.gg
   
 # Aide
 
-  - Je suis à votre disposition si vous avez des questions ou requete si vous trouvez des erreurs , bugs ou autre souci hésiter pas a m'en faire part.
+  - Je suis à votre disposition si vous avez des questions ou requêtes si vous trouvez des erreurs, bugs ou autres soucis hésiter pas à m'en faire part.
