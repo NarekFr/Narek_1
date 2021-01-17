@@ -55,10 +55,3 @@ Config.Weapon = {
 	{'Couteau', 'WEAPON_KNIFE', 5000, 0}, 
 	{'Pistolet', 'WEAPON_PISTOL', 10000, 1},
 }
-
-Config.Job = {
-	-- {Label, Job}
-	{'Mineur','mineur'},
-	{'Bûcheron','bucheron'},
-	{'Chômeur','unemployed'},
-}
