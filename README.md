@@ -22,7 +22,6 @@ Voici mon serveur discord si vous trouvez des bugs ou autre : https://discord.gg
   - Config.Blip | Vous permet de mettre en place des Blips raduis
   - Config.Food | Vous permet de choisir les items dans les shops
   - Config.Weapon | Vous permet de choisir les armes dans les shops
-  - Config.Job | Vous permet de choisir les métiers dans le pôle emploi
   
 # Aide
 
