@@ -9,13 +9,6 @@ Citizen.CreateThread(function()
 	end 
 end)
 
-RegisterCommand("getpos", function(source, args, raw)
-    local ped = GetPlayerPed(PlayerId())
-    local coords = GetEntityCoords(ped, false)
-    local heading = GetEntityHeading(ped)
-    Citizen.Trace(tostring("X: " .. coords.x .. " Y: " .. coords.y .. " Z: " .. coords.z .. " HEADING: " .. heading))
-end, false)
-
 function OpenShopMenu()
 	local elements = {}
 	for _,v in pairs(Config.Food) do table.insert(elements, {label = v[1]..' | <span style="color:red;">'..v[3]..'$</span> ', name = v[2]}) end
@@ -53,16 +46,30 @@ function OpenArmurerieMenu()
 end
 
 function OpenPoleEmploiMenu()
-	local elements = {}
-	for _,v in pairs(Config.Job) do table.insert(elements, {label = v[1], name = v[2]}) end
-	ESX.UI.Menu.CloseAll()
-	ESX.UI.Menu.Open('default', GetCurrentResourceName(), 'actions', {title = _U('poleemploi'), align = 'left', elements = elements }, function(data, menu)		
-		for _,v in pairs(Config.Job) do
-			if data.current.name == v[2] then
-				TriggerServerEvent('Narek_1:Autre', v[1], v[2])
-			end
+	ESX.TriggerServerCallback('esx_joblisting:getJobsList', function(jobs)
+		local elements = {}
+
+		for i=1, #jobs, 1 do
+			table.insert(elements, {
+				label = jobs[i].label,
+				job   = jobs[i].job
+			})
 		end
-	end, function(data, menu) menu.close() end)
+
+		ESX.UI.Menu.Open('default', GetCurrentResourceName(), 'joblisting', {
+			title    = _U('poleemploi'),
+			align    = 'top-left',
+			elements = elements
+		}, function(data, menu)
+			TriggerServerEvent('esx_joblisting:setJob', data.current.job)
+			exports['mythic_notify']:SendAlert('success', 'Vous avez un nouvel emplois !', 2500)
+			--ESX.ShowNotification(_U('SetJob'))
+			menu.close()
+		end, function(data, menu)
+			menu.close()
+		end)
+
+	end)
 end
 
 Citizen.CreateThread(function()
